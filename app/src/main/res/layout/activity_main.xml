@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lab213.marklessar.MainActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_sur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/source_image_java_surface_view"
+        android:layout_width="240dip"
+        android:layout_height="160dip"
+        android:visibility="invisible"
+        opencv:camera_id="any"
+        opencv:show_fps="false" />
+
+    <org.opencv.android.NativeCameraView
+        android:id="@+id/source_image_native_surface_view"
+        android:layout_width="240dip"
+        android:layout_height="160dip"
+        android:visibility="invisible"
+        opencv:camera_id="any"
+        opencv:show_fps="false" />
+
+
+    <ImageView
+        android:id="@+id/matched_image"
+        android:layout_width="240dip"
+        android:layout_height="120dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/start_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Start Markless AR"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Producted By Frank"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip" />
+</FrameLayout>
