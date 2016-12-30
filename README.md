@@ -6,18 +6,18 @@ MarklessAR_Android is a demo project for a markless augmented reality applicatio
 * OpenGL ES 1/ ES 2
 
 # How to use
-1. Configure Android Studio for NDK and CMake, both of which can be downloaded via Android Studio SDK menu(Tools->Android->SDK Manager->SDK Tools);
-2. Download this repository to local directory:
+1.Configure Android Studio for NDK and CMake, both of which can be downloaded via Android Studio SDK menu(Tools->Android->SDK Manager->SDK Tools);
+2.Download this repository to local directory:
 ```
 git clone https://github.com/FangGet/MarklessAR_Android.git
 ```
-3. Download OpenCV4Android and decompressed it:
+3.Download OpenCV4Android and decompressed it:
 ```
 wget http://jaist.dl.sourceforge.net/project/opencvlibrary/opencv-android/2.4.11/OpenCV-2.4.11-android-sdk.zip
 unzip OpenCV-2.4.11-android-sdk.zip
 ```
-4. Import project into Android Studio(File->New->Import Project), find your project and click ok.
-5. Revise some configurations:
+4.Import project into Android Studio(File->New->Import Project), find your project and click ok.
+5.Revise some configurations:
 (1) import OpenCV java SDK(File->New->Import Module), find OpenCV4Android->sdk->java and import it, dependency files will be generated automaticly;
 (2) revise following variables:
 ``` 
@@ -47,6 +47,7 @@ In this demo project, only a coordinate system and simple cube is demonstrated, 
 [https://github.com/takmin/OpenCV-Marker-less-AR](https://github.com/takmin/OpenCV-Marker-less-AR)
 
 # My blog (Chinese)
+[http://fangrenziwo.com/2016/12/30/markless-ar-mobile-as/](http://fangrenziwo.com/2016/12/30/markless-ar-mobile-as/)
 
 
 
